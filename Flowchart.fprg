@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DedyCom"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-29 08:29:49 AM"/>
+        <attribute name="created" value="RGVkeUNvbTtERVNLVE9QLU1HUUYxUU47MjAyMS0xMS0yOTswODoyMDozNiBBTTszMDMz"/>
+        <attribute name="edited" value="RGVkeUNvbTtERVNLVE9QLU1HUUYxUU47MjAyMS0xMS0yOTswODoyOTo0OSBBTTsxOzMxNTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jam" type="Integer" array="False" size=""/>
+            <declare name="menit" type="Integer" array="False" size=""/>
+            <declare name="sisa" type="Integer" array="False" size=""/>
+            <declare name="detik" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan Jumlah Detik : &quot;" newline="False"/>
+            <input variable="detik"/>
+            <assign variable="jam" expression="detik / 3600"/>
+            <assign variable="sisa" expression="detik % 3600"/>
+            <assign variable="menit" expression="sisa / 60"/>
+            <assign variable="sisa" expression="sisa % 60"/>
+            <output expression="&quot;Hasil Konversi : &quot;" newline="False"/>
+            <output expression="jam" newline="False"/>
+            <output expression="&quot; jam &quot;" newline="False"/>
+            <output expression="menit" newline="False"/>
+            <output expression="&quot; menit &quot;" newline="False"/>
+            <output expression="sisa" newline="False"/>
+            <output expression="&quot; detik&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
